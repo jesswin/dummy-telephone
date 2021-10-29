@@ -2,7 +2,7 @@ const textField = document.querySelector("#telephone"); //Instance of textBox.
 
 let timer; //Timer for longPress.
 
-let flag = false; //To decide whether to execute buttonClick or not.
+let isLongPress = false; //To decide whether to execute buttonClick or not.
 
 let lastCharSet = null; //For checking if last characterSet was same.
 
@@ -21,7 +21,7 @@ document.addEventListener("click", (e) => {
   e.preventDefault();
 
   //condition if there was a longPress.
-  if (!flag) {
+  if (!isLongPress) {
     //condition if the lastCharacterSet was same and counter was less than charterSet length.
     if (e.target.value === lastCharSet && counter < e.target.value.length) {
       counter++;
@@ -58,7 +58,7 @@ document.addEventListener("click", (e) => {
     }, 1200);
     //after 800ms this data will be confirmed and will not be editable
   }
-  flag = false; // setting flag to false after a longPress to allow it to get into buttonClick
+  isLongPress = false; // setting flag to false after a longPress to allow it to get into buttonClick
 });
 //button Logic ends here
 
