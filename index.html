@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Telephone</title>
+  </head>
+  <body>
+    <div>
+      <input id="telephone" readonly="true" class="screen" type="text" />
+    </div>
+    <div>
+      <button
+        onmousedown="mouseDownHandler(1)"
+        onmouseup="mouseUpHandler()"
+        class="keypad"
+        value=".,!"
+      >
+        1<br />
+        . , !
+      </button>
+      <button
+        onmousedown="mouseDownHandler(2)"
+        onmouseup="mouseUpHandler()"
+        class="keypad"
+        value="abc"
+      >
+        2<br />
+        a b c
+      </button>
+      <button
+        onmousedown="mouseDownHandler(3)"
+        onmouseup="mouseUpHandler()"
+        class="keypad"
+        value="def"
+      >
+        3 <br />
+        d e f
+      </button>
+    </div>
+    <div>
+      <button
+        onmousedown="mouseDownHandler(4)"
+        onmouseup="mouseUpHandler()"
+        class="keypad"
+        value="ghi"
+      >
+        4<br />
+        g h i
+      </button>
+      <button
+        onmousedown="mouseDownHandler(5)"
+        onmouseup="mouseUpHandler()"
+        class="keypad"
+        value="jkl"
+      >
+        5<br />
+        j k l
+      </button>
+      <button
+        onmousedown="mouseDownHandler(6)"
+        onmouseup="mouseUpHandler()"
+        class="keypad"
+        value="mno"
+      >
+        6<br />
+        m n o
+      </button>
+    </div>
+    <div>
+      <button
+        onmousedown="mouseDownHandler(7)"
+        onmouseup="mouseUpHandler()"
+        class="keypad"
+        value="pqrs"
+      >
+        7<br />
+        p q r s
+      </button>
+      <button
+        onmousedown="mouseDownHandler(8)"
+        onmouseup="mouseUpHandler()"
+        class="keypad"
+        value="tuv"
+      >
+        8<br />
+        t u v
+      </button>
+      <button
+        onmousedown="mouseDownHandler(9)"
+        onmouseup="mouseUpHandler()"
+        class="keypad"
+        value="wxyz"
+      >
+        9<br />
+        w x y z
+      </button>
+    </div>
+    <div>
+      <button value="*" class="keypad">*</button>
+      <button value="0" class="keypad">0</button>
+      <button value="#" onclick="btnClickHandler(['#'])" class="keypad">
+        #
+      </button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

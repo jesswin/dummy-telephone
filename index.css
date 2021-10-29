@@ -1,0 +1,10 @@
+.keypad {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.screen {
+  width: 280px;
+  margin: 10px;
+}
