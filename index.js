@@ -55,13 +55,12 @@ document.addEventListener("click", (e) => {
     //Timer to confirm the data/letter in textBox
     keyPadTimer = setTimeout(() => {
       text = textField.value;
-    }, 800);
+    }, 1200);
     //after 800ms this data will be confirmed and will not be editable
   }
   flag = false; // setting flag to false after a longPress to allow it to get into buttonClick
 });
 //button Logic ends here
-
 
 //To clear the longPress Timer
 const mouseUpHandler = () => {
