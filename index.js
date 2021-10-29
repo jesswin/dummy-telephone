@@ -73,6 +73,7 @@ const mouseDownHandler = (number) => {
   timer = setTimeout(() => {
     console.log(number);
     textField.value = textField.value + number;
+    text = textField.value;
     isLongPress = true;
   }, 800);
 };
